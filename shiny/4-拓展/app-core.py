@@ -176,4 +176,4 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)
-##shiny run --reload --launch-browser .\app-core.py
+##shiny run --reload --port 8889 --launch-browser .\app-core.py
