@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // js的内置对象，html的文档对象
+        //  如果获取的对象是null，表示标签没有获取成功
+    
+        // function fnLoad(){
+        //     var oP = document.getElementById("p1");
+        //     alert(oP);
+        // }
+        // 页面标签和数据都加载完成以后会触发onload事件
+        // window.onload = fnLoad;
+
+        // 这种写法才是开发过程中真正的写法，要等页面标签和数据加载完成
+        window.onload = function(){
+            var oP = document.getElementById("p1");
+            alert(oP);
+        };
+
+
+    </script>
+</head>
+<body>
+    <p id="p1">哈哈，我是一个段落标签</p>
+</body>
+</html>
+<!-- 这种写法，不推荐，知道即可，就是等标签初始化完成再获取 -->
+<!-- <script>
+    // js的内置对象，html的文档对象
+    //  如果获取的对象是null，表示标签没有获取成功
+    var oP = document.getElementById("p1");
+    alert(oP);
+</script> -->

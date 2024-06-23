@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 把数据提交给web服务器需要使用表单标签：<form> -->
+    <form action="https://www.baidu.com" method="POST">
+        <p>
+            <!-- for 根据id名给指定id的标签设置光标 -->
+            <label for="name">用户名:</label>
+            <input type="text" id="name" name="username">
+        </p>
+        <p>
+            <label>密码:</label>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <label>性别:</label>
+            <input type="radio" name="sex" value="0">男
+            <input type="radio" name="sex" value="1">女
+        </p>
+        <p>
+            <label>爱好:</label>
+            <input type="checkbox" name="love" value="学习">学习
+            <input type="checkbox" name="love" value="睡觉">睡觉
+            <input type="checkbox" name="love" value="打游戏">打游戏
+        </p>
+        <p>
+            <label>玉照:</label>
+            <input type="file" name="pic">
+        </p>
+        <p>
+            <label>个人描述:</label>
+            <textarea name="desc"></textarea>
+        </p>
+        <p>
+            <label>籍贯:</label>
+            <select name="position">
+                <option value="1">北京</option>
+                <option value="2">河北</option>
+                <option value="3">深圳</option>
+                <option value="4">湖北</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+            <input type="button" value="按钮">
+        </p>
+
+        <!-- get和post方式提交表单数据都以http协议的方式提交数据给web服务器 -->
+
+    </form>
+</body>
+</html>
