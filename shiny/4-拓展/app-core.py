@@ -174,6 +174,6 @@ def server(input, output, session):
         ui.update_slider("total_bill", value=bill_rng)
         ui.update_checkbox_group("time", selected=["Lunch", "Dinner"])
 
-if __name__ == '__main__':
-    app = App(app_ui, server)
-    ##shiny run --reload --launch-browser .\app-core.py
+
+app = App(app_ui, server)
+##shiny run --reload --launch-browser .\app-core.py
